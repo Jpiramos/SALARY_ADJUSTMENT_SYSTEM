@@ -17,7 +17,6 @@ namespace Departamento_Funcionario
 
 
 
-
             // Criando um funcionário
             Funcionario funcionario1 = new Funcionario(textBox1.Text,Convert.ToInt32( textBox2.Text), Convert.ToDouble(textBox3.Text), departamento);
 
@@ -38,14 +37,9 @@ namespace Departamento_Funcionario
 
 
             // Exibindo informações do funcionário
-            MessageBox.Show($"Nome: {funcionario1.Nome}\nIdade: {funcionario1.Idade}\nDepartamento: {funcionario1.Departamento._Nome}\nSalário Reajustado: {funcionario1.Salario}");
+            MessageBox.Show($"Nome: {funcionario1._Nome}\nIdade: {funcionario1._Idade}\nDepartamento: {funcionario1._Departamento._Nome}\nSalário Reajustado: {funcionario1._Salario}");
            
         }
-
-
-
-
-
 
 
         private void label5_Click(object sender, EventArgs e)
